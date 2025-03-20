@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/petersamaan/ros2_tut_serv/install/tutorial_interfaces/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/src/local_publisher/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
