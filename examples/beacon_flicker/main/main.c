@@ -43,58 +43,39 @@ int32_t counter_1 = 1;
 int32_t counter_2 = 1;
 
 
-///8.3. modifying the whole time_calleback fcn
 void timer_callback(rcl_timer_t *timer, int64_t last_call_time)
 {
-    char buffer [100];
-    strcpy(buffer,"Beacon is OFF");
+    char buffer[100];
+    strcpy(buffer, "Beacon is OFF");
 
-    if (beacon_state){ 
-        strcpy(buffer,"Beacon is ON");
-		if (counter_1 == 1) on_off = 1;
-		else if (counter_2 % counter_1 == 0) on_off = ! on_off;
-		
+    if (beacon_state) {
+        strcpy(buffer, "Beacon is ON");
+
+        if (beacon_mode) {
+            // Blinking mode: Toggle the LED every `counter_1` counts
+            if (counter_2 % counter_1 == 0) {
+                on_off = !on_off; // Toggle the LED state
+            }
+            counter_2++;
+            if (counter_2 == 101) counter_2 = 1; // Reset counter_2 to avoid overflow
+        } else {
+            // Continuous ON mode
+            on_off = 1;
+        }
+    } else {
+        // Beacon is OFF
+        strcpy(buffer, "Beacon is OFF");
+        on_off = 0;
+        counter_1 = 0;
+        counter_2 = 0;
     }
-	else {
-		strcpy(buffer,"Beacon is OFF");
-		on_off = 0;
-		counter_1 = 0;
-	}
 
-	if (beacon_mode){
-		counter_1 ++;
-		if (counter_1 == 11) counter_1 = 1;
-		beacon_mode = 0;
-	}
-
-	counter_2 ++;
-	if (counter_2 == 101) counter_2 = 1;
-
-	
-	
-
-
-
-    /*
-    if (beacon_mode && (counter * exec_timer) < 500){
-        strcpy(buffer,"changing mode");
-        counter ++;
-    }   
-    
-    else {
-        counter =0;
-        beacon_mode = 0;
-    }
-	*/
-
-	
-
+    // Update the message and set the LED state
     rosidl_runtime_c__String__assign(&msg.data, buffer);
     rcl_ret_t ret = rcl_publish(&publisher, &msg, NULL);
     gpio_set_level(LED_state, on_off);
-    //gpio_set_level(LED_mode, beacon_mode);
-    
-}  
+}
+
 
 
 
@@ -107,30 +88,40 @@ void service_beacon(const void *req, void *res) {
     const std_srvs__srv__SetBool_Request *request = (const std_srvs__srv__SetBool_Request *)req;
     std_srvs__srv__SetBool_Response *response = (std_srvs__srv__SetBool_Response *)res;
 
+    // Initialize the response message string
+    rosidl_runtime_c__String__init(&response->message);
+
     // Update interval based on the request data
-    printf( "Incoming request: %d",  request->data);  
-    
+    printf("Incoming request: %d\n", request->data);
+
     if (request->data) {
         if (beacon_state) {
-            beacon_mode = 1;
-            printf("Changing Mode.");
+            // If beacon is already ON, change the mode
+            beacon_mode = 1; // Enable blinking mode
+            counter_1++;     // Increase the blink interval
+            if (counter_1 > 10) counter_1 = 1; // Reset to 1 after reaching 10
+            printf("Changing Mode. Blink interval: %" PRId32 "\n", counter_1);
             response->success = true;
-        }
-        else {
+            rosidl_runtime_c__String__assign(&response->message, "Mode changed successfully.");
+        } else {
+            // Turn ON the beacon (first call)
             beacon_state = 1;
-            beacon_mode = 0;
-            printf("Beacon is ON.");
+            beacon_mode = 0; // Continuous ON mode
+            counter_1 = 1;   // Reset blink interval
+            printf("Beacon is ON.\n");
             response->success = true;
+            rosidl_runtime_c__String__assign(&response->message, "Beacon turned ON successfully.");
         }
     } else {
+        // Turn OFF the beacon
         beacon_state = 0;
         beacon_mode = 0;
-        printf("Beacon is OFF.");
+        counter_1 = 0;
+        printf("Beacon is OFF.\n");
         response->success = true;
+        rosidl_runtime_c__String__assign(&response->message, "Beacon turned OFF successfully.");
     }
-
 }
-
 
 void micro_ros_task(void * arg)
 {
