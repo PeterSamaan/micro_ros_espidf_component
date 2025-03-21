@@ -1,0 +1,25 @@
+[0.106s] Invoking command in '/home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/build/local_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/build/local_publisher -- -j4 -l4
+[0.561s] [ 50%] [32mBuilding CXX object CMakeFiles/local_publisher.dir/src/local_publisher.cpp.o[0m
+[16.487s] [100%] [32m[1mLinking CXX executable local_publisher[0m
+[17.190s] [100%] Built target local_publisher
+[17.232s] Invoked command in '/home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/build/local_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/build/local_publisher -- -j4 -l4
+[17.346s] Invoking command in '/home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/build/local_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/build/local_publisher
+[17.369s] -- Install configuration: ""
+[17.371s] -- Installing: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/lib/local_publisher/local_publisher
+[17.376s] -- Set runtime path of "/home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/lib/local_publisher/local_publisher" to ""
+[17.376s] -- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/ament_index/resource_index/package_run_dependencies/local_publisher
+[17.377s] -- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/ament_index/resource_index/parent_prefix_path/local_publisher
+[17.379s] -- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/environment/ament_prefix_path.sh
+[17.379s] -- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/environment/ament_prefix_path.dsv
+[17.380s] -- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/environment/path.sh
+[17.381s] -- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/environment/path.dsv
+[17.381s] -- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/local_setup.bash
+[17.381s] -- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/local_setup.sh
+[17.382s] -- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/local_setup.zsh
+[17.382s] -- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/local_setup.dsv
+[17.382s] -- Installing: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/package.dsv
+[17.383s] -- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/ament_index/resource_index/packages/local_publisher
+[17.383s] -- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/cmake/local_publisherConfig.cmake
+[17.384s] -- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/cmake/local_publisherConfig-version.cmake
+[17.384s] -- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/package.xml
+[17.390s] Invoked command in '/home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/build/local_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/build/local_publisher

@@ -1,0 +1,124 @@
+[0.000000] (-) TimerEvent: {}
+[0.001046] (local_publisher) JobQueued: {'identifier': 'local_publisher', 'dependencies': OrderedDict()}
+[0.001117] (local_publisher) JobStarted: {'identifier': 'local_publisher'}
+[0.020646] (local_publisher) JobProgress: {'identifier': 'local_publisher', 'progress': 'cmake'}
+[0.022573] (local_publisher) JobProgress: {'identifier': 'local_publisher', 'progress': 'build'}
+[0.024878] (local_publisher) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/build/local_publisher', '--', '-j4', '-l4'], 'cwd': '/home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/build/local_publisher', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'petersamaan'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('IDF_TOOLS_INSTALL_CMD', '/home/petersamaan/esp/esp-idf/install.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/petersamaan/ros2_tut_serv/install/tutorial_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/petersamaan'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('SYSTEMD_EXEC_PID', '7680'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('OPENOCD_SCRIPTS', '/home/petersamaan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240821/openocd-esp32/share/openocd/scripts'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('COLCON_PREFIX_PATH', '/home/petersamaan/ros2_tut_serv/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'petersamaan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'petersamaan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('IDF_DEACTIVATE_FILE_PATH', '/tmp/tmpzi816uk8idf_19175'), ('ROS_LOCALHOST_ONLY', '0'), ('IDF_PATH', '/home/petersamaan/esp/esp-idf'), ('WINDOWPATH', '2'), ('PATH', '/home/petersamaan/esp/esp-idf/components/espcoredump:/home/petersamaan/esp/esp-idf/components/partition_table:/home/petersamaan/esp/esp-idf/components/app_update:/home/petersamaan/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/petersamaan/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/petersamaan/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin:/home/petersamaan/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20230928/riscv32-esp-elf/bin:/home/petersamaan/.espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/home/petersamaan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240821/openocd-esp32/bin:/home/petersamaan/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/petersamaan/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/petersamaan/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin:/home/petersamaan/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20230928/riscv32-esp-elf/bin:/home/petersamaan/.espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/home/petersamaan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240821/openocd-esp32/bin:/home/petersamaan/.espressif/python_env/idf5.2_py3.10_env/bin:/home/petersamaan/esp/esp-idf/tools:/opt/ros/humble/bin:/home/petersamaan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/petersamaan-IdeaPad-Flex-3-11ADA05:@/tmp/.ICE-unix/3045,unix/petersamaan-IdeaPad-Flex-3-11ADA05:/tmp/.ICE-unix/3045'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c5e9bf18_0a35_4be7_b8da_e8febaa30b0c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('ESP_IDF_VERSION', '5.2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.173'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/petersamaan/ros2_tut_serv/install/cpp_srvcli:/home/petersamaan/ros2_tut_serv/install/tutorial_interfaces:/home/petersamaan/ros2_tut_serv/install/onn_offs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('IDF_PYTHON_ENV_PATH', '/home/petersamaan/.espressif/python_env/idf5.2_py3.10_env'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IDF_TOOLS_EXPORT_CMD', '/home/petersamaan/esp/esp-idf/export.sh'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/build/local_publisher'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/petersamaan/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/petersamaan/ros2_tut_serv/install/tutorial_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ESP_ROM_ELF_DIR', '/home/petersamaan/.espressif/tools/esp-rom-elfs/20230320/'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/petersamaan/ros2_tut_serv/install/cpp_srvcli:/home/petersamaan/ros2_tut_serv/install/tutorial_interfaces:/home/petersamaan/ros2_tut_serv/install/onn_offs:/opt/ros/humble')]), 'shell': False}
+[0.099676] (-) TimerEvent: {}
+[0.185885] (local_publisher) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target local_publisher\x1b[0m\n'}
+[0.199865] (-) TimerEvent: {}
+[0.226861] (local_publisher) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/local_publisher.dir/src/local_publisher.cpp.o\x1b[0m\n'}
+[0.300007] (-) TimerEvent: {}
+[0.400495] (-) TimerEvent: {}
+[0.501008] (-) TimerEvent: {}
+[0.601525] (-) TimerEvent: {}
+[0.702598] (-) TimerEvent: {}
+[0.803063] (-) TimerEvent: {}
+[0.903738] (-) TimerEvent: {}
+[1.004213] (-) TimerEvent: {}
+[1.104694] (-) TimerEvent: {}
+[1.205147] (-) TimerEvent: {}
+[1.306113] (-) TimerEvent: {}
+[1.406580] (-) TimerEvent: {}
+[1.507066] (-) TimerEvent: {}
+[1.607515] (-) TimerEvent: {}
+[1.708217] (-) TimerEvent: {}
+[1.808720] (-) TimerEvent: {}
+[1.909328] (-) TimerEvent: {}
+[2.009741] (-) TimerEvent: {}
+[2.110240] (-) TimerEvent: {}
+[2.210753] (-) TimerEvent: {}
+[2.311253] (-) TimerEvent: {}
+[2.411674] (-) TimerEvent: {}
+[2.512141] (-) TimerEvent: {}
+[2.612668] (-) TimerEvent: {}
+[2.713155] (-) TimerEvent: {}
+[2.813604] (-) TimerEvent: {}
+[2.914052] (-) TimerEvent: {}
+[3.014485] (-) TimerEvent: {}
+[3.115000] (-) TimerEvent: {}
+[3.215503] (-) TimerEvent: {}
+[3.316012] (-) TimerEvent: {}
+[3.416461] (-) TimerEvent: {}
+[3.517048] (-) TimerEvent: {}
+[3.617534] (-) TimerEvent: {}
+[3.717984] (-) TimerEvent: {}
+[3.818427] (-) TimerEvent: {}
+[3.918992] (-) TimerEvent: {}
+[4.019473] (-) TimerEvent: {}
+[4.120077] (-) TimerEvent: {}
+[4.220513] (-) TimerEvent: {}
+[4.320991] (-) TimerEvent: {}
+[4.421450] (-) TimerEvent: {}
+[4.521927] (-) TimerEvent: {}
+[4.622393] (-) TimerEvent: {}
+[4.722903] (-) TimerEvent: {}
+[4.823386] (-) TimerEvent: {}
+[4.924020] (-) TimerEvent: {}
+[5.024525] (-) TimerEvent: {}
+[5.124979] (-) TimerEvent: {}
+[5.225431] (-) TimerEvent: {}
+[5.325929] (-) TimerEvent: {}
+[5.426509] (-) TimerEvent: {}
+[5.526935] (-) TimerEvent: {}
+[5.627492] (-) TimerEvent: {}
+[5.728026] (-) TimerEvent: {}
+[5.828527] (-) TimerEvent: {}
+[5.929035] (-) TimerEvent: {}
+[6.029698] (-) TimerEvent: {}
+[6.130152] (-) TimerEvent: {}
+[6.230680] (-) TimerEvent: {}
+[6.331127] (-) TimerEvent: {}
+[6.431559] (-) TimerEvent: {}
+[6.531994] (-) TimerEvent: {}
+[6.632418] (-) TimerEvent: {}
+[6.732850] (-) TimerEvent: {}
+[6.833322] (-) TimerEvent: {}
+[6.933793] (-) TimerEvent: {}
+[7.034237] (-) TimerEvent: {}
+[7.136667] (-) TimerEvent: {}
+[7.237339] (-) TimerEvent: {}
+[7.337931] (-) TimerEvent: {}
+[7.438480] (-) TimerEvent: {}
+[7.538905] (-) TimerEvent: {}
+[7.639373] (-) TimerEvent: {}
+[7.740068] (-) TimerEvent: {}
+[7.840791] (-) TimerEvent: {}
+[7.941353] (-) TimerEvent: {}
+[8.041932] (-) TimerEvent: {}
+[8.142345] (-) TimerEvent: {}
+[8.242784] (-) TimerEvent: {}
+[8.343260] (-) TimerEvent: {}
+[8.398099] (local_publisher) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable local_publisher\x1b[0m\n'}
+[8.443706] (-) TimerEvent: {}
+[8.544253] (-) TimerEvent: {}
+[8.644799] (-) TimerEvent: {}
+[8.745578] (-) TimerEvent: {}
+[8.846028] (-) TimerEvent: {}
+[8.906670] (local_publisher) StdoutLine: {'line': b'[100%] Built target local_publisher\n'}
+[8.936116] (local_publisher) CommandEnded: {'returncode': 0}
+[8.946201] (-) TimerEvent: {}
+[8.998493] (local_publisher) JobProgress: {'identifier': 'local_publisher', 'progress': 'install'}
+[9.016863] (local_publisher) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/build/local_publisher'], 'cwd': '/home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/build/local_publisher', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'petersamaan'), ('LC_TIME', 'nl_NL.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('IDF_TOOLS_INSTALL_CMD', '/home/petersamaan/esp/esp-idf/install.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/petersamaan/ros2_tut_serv/install/tutorial_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/petersamaan'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'nl_NL.UTF-8'), ('SYSTEMD_EXEC_PID', '7680'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('OPENOCD_SCRIPTS', '/home/petersamaan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240821/openocd-esp32/share/openocd/scripts'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('COLCON_PREFIX_PATH', '/home/petersamaan/ros2_tut_serv/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'petersamaan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'petersamaan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('IDF_DEACTIVATE_FILE_PATH', '/tmp/tmpzi816uk8idf_19175'), ('ROS_LOCALHOST_ONLY', '0'), ('IDF_PATH', '/home/petersamaan/esp/esp-idf'), ('WINDOWPATH', '2'), ('PATH', '/home/petersamaan/esp/esp-idf/components/espcoredump:/home/petersamaan/esp/esp-idf/components/partition_table:/home/petersamaan/esp/esp-idf/components/app_update:/home/petersamaan/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/petersamaan/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/petersamaan/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin:/home/petersamaan/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20230928/riscv32-esp-elf/bin:/home/petersamaan/.espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/home/petersamaan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240821/openocd-esp32/bin:/home/petersamaan/.espressif/tools/xtensa-esp-elf-gdb/14.2_20240403/xtensa-esp-elf-gdb/bin:/home/petersamaan/.espressif/tools/riscv32-esp-elf-gdb/14.2_20240403/riscv32-esp-elf-gdb/bin:/home/petersamaan/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin:/home/petersamaan/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20230928/riscv32-esp-elf/bin:/home/petersamaan/.espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/home/petersamaan/.espressif/tools/openocd-esp32/v0.12.0-esp32-20240821/openocd-esp32/bin:/home/petersamaan/.espressif/python_env/idf5.2_py3.10_env/bin:/home/petersamaan/esp/esp-idf/tools:/opt/ros/humble/bin:/home/petersamaan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/petersamaan-IdeaPad-Flex-3-11ADA05:@/tmp/.ICE-unix/3045,unix/petersamaan-IdeaPad-Flex-3-11ADA05:/tmp/.ICE-unix/3045'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'nl_NL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c5e9bf18_0a35_4be7_b8da_e8febaa30b0c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'nl_NL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('ESP_IDF_VERSION', '5.2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.173'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/petersamaan/ros2_tut_serv/install/cpp_srvcli:/home/petersamaan/ros2_tut_serv/install/tutorial_interfaces:/home/petersamaan/ros2_tut_serv/install/onn_offs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'nl_NL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('IDF_PYTHON_ENV_PATH', '/home/petersamaan/.espressif/python_env/idf5.2_py3.10_env'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IDF_TOOLS_EXPORT_CMD', '/home/petersamaan/esp/esp-idf/export.sh'), ('LC_MEASUREMENT', 'nl_NL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'nl_NL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/build/local_publisher'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/petersamaan/pico-sdk'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/petersamaan/ros2_tut_serv/install/tutorial_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ESP_ROM_ELF_DIR', '/home/petersamaan/.espressif/tools/esp-rom-elfs/20230320/'), ('LC_NUMERIC', 'nl_NL.UTF-8'), ('LC_PAPER', 'nl_NL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/petersamaan/ros2_tut_serv/install/cpp_srvcli:/home/petersamaan/ros2_tut_serv/install/tutorial_interfaces:/home/petersamaan/ros2_tut_serv/install/onn_offs:/opt/ros/humble')]), 'shell': False}
+[9.034777] (local_publisher) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.036451] (local_publisher) StdoutLine: {'line': b'-- Installing: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/lib/local_publisher/local_publisher\n'}
+[9.039603] (local_publisher) StdoutLine: {'line': b'-- Set runtime path of "/home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/lib/local_publisher/local_publisher" to ""\n'}
+[9.041720] (local_publisher) StdoutLine: {'line': b'-- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/ament_index/resource_index/package_run_dependencies/local_publisher\n'}
+[9.042165] (local_publisher) StdoutLine: {'line': b'-- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/ament_index/resource_index/parent_prefix_path/local_publisher\n'}
+[9.042912] (local_publisher) StdoutLine: {'line': b'-- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/environment/ament_prefix_path.sh\n'}
+[9.043266] (local_publisher) StdoutLine: {'line': b'-- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/environment/ament_prefix_path.dsv\n'}
+[9.043645] (local_publisher) StdoutLine: {'line': b'-- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/environment/path.sh\n'}
+[9.043960] (local_publisher) StdoutLine: {'line': b'-- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/environment/path.dsv\n'}
+[9.044286] (local_publisher) StdoutLine: {'line': b'-- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/local_setup.bash\n'}
+[9.044617] (local_publisher) StdoutLine: {'line': b'-- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/local_setup.sh\n'}
+[9.044865] (local_publisher) StdoutLine: {'line': b'-- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/local_setup.zsh\n'}
+[9.045130] (local_publisher) StdoutLine: {'line': b'-- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/local_setup.dsv\n'}
+[9.045451] (local_publisher) StdoutLine: {'line': b'-- Installing: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/package.dsv\n'}
+[9.045779] (local_publisher) StdoutLine: {'line': b'-- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/ament_index/resource_index/packages/local_publisher\n'}
+[9.046152] (local_publisher) StdoutLine: {'line': b'-- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/cmake/local_publisherConfig.cmake\n'}
+[9.046486] (-) TimerEvent: {}
+[9.046707] (local_publisher) StdoutLine: {'line': b'-- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/cmake/local_publisherConfig-version.cmake\n'}
+[9.046960] (local_publisher) StdoutLine: {'line': b'-- Up-to-date: /home/petersamaan/ESP32/first_example/micro_ros_espidf_component/examples/local_publisher/install/local_publisher/share/local_publisher/package.xml\n'}
+[9.050548] (local_publisher) CommandEnded: {'returncode': 0}
+[9.139587] (local_publisher) JobEnded: {'identifier': 'local_publisher', 'rc': 0}
+[9.140652] (-) EventReactorShutdown: {}

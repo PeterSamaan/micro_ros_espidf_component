@@ -56,13 +56,14 @@ Is possible to use a micro-ROS Agent just with this docker command:
 docker run -it --rm --net=host microros/micro-ros-agent:foxy udp4 --port 8888 -v6
 ```
 
-## Build with docker container
+## Build and Flash in one step with docker container
 
 It's possible to build this example application using preconfigured docker container. Execute this line to build an example app using docker container:
 
 ```bash
-docker run -it --rm --user espidf --volume="/etc/timezone:/etc/timezone:ro" -v  $(pwd):/micro_ros_espidf_component -v  /dev:/dev --privileged --workdir /micro_ros_espidf_component microros/esp-idf-microros:latest /bin/bash  -c "cd examples/int32_publisher; idf.py menuconfig build flash monitor"
+docker run -it --rm --user root     --volume="/etc/timezone:/etc/timezone:ro"     -v $(pwd):/micro_ros_espidf_component     -v /dev:/dev --privileged     --workdir /micro_ros_espidf_component/examples/beacon_subs     microros/esp-idf-microros:latest /bin/bash -c "idf.py menuconfig build flash monitor"
 ```
+Mind the part *examples/beacon_subs* indicates the desied example to be run.
 
 Dockerfile for this container is provided in the ./docker directory and available in dockerhub. This approach uses ESP-IDF v5.
 
@@ -113,6 +114,11 @@ Were designed to control  beacon of model *RS 907-5965*
  switch it to ON or change its flickering frequency (0 to 10 times per second). 
  For this project it is essential to pre-fix the beacon mode at Constant light mode.
 
+### beacon_subs
+ The project uses thetopic of the *local_publisher* (a ros2 publisher included in the examples) to control the fliskering intervals of the beacon according to the published values, curently the values published are from 0 to 100, incrementing by 10 each 10 seconds to allow for testing and monitoring the final behavior.
+
+### Inportant Documents
+ Please follow both *"Installing a Micro-Ros Agent on a ESP32 (blinking and LED)"* and *"ESP32 controlling RS 907-5965 via Micro-Ros Agent over WiFi"* documents for step-by-step dlasing and running the codes, along with important comments on the code for further modifications.
 
 ## License
 
